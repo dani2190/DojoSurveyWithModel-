@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@Model 
+    <form action="survey" method="POST">
+
+        <label for="Name">Your Name:</label>
+        <input class="u-full-width" type="text" placeholder="John Doe" name="Name"  >
+
+    
+        <label for="Locations">Dojo Location:</label>
+        <select class="u-full-width" name="Locations">
+            <p><option value="san jose">San Jose, Ca.</option></p>
+            <p><option value="seattle">Seattle, Wa.</option></p>
+            <p><option value="Los Angele">Los Angeles, Ca.</option></p>
+            <p><option value="dallas">Dallas, Tx.</option></p>
+            <p><option value="Tyson's Corner">Tyson's Corner, Va.</option></p>
+            <p><option value="chicago">Chicago, Il.</option></p>
+            <p><option value="tulsa">Tulsa, Ok.</option></p>
+            <p><option value="berkeley">Berkeley, Ca.</option></p>
+            <p><option value="boise">Boise, Id.</option></p>
+            <p><option value="Orange County">Orange County, Ca.</option></p>
+        </select>
+    
+
+        <p><label for="Languages">Favorite Language:</label>
+        <p><select class="u-full-width" name="Languages">
+            <p><option value="java">Java</option></p>
+            <p><option value="python">Python</option></p>
+            <p><option value="javascript">JavaScript</option></p>
+            <p><option value="cplusplus">C++</option></p>
+            <p><option value="csharp">C#</option></p>
+            <p><option value="php">PHP</option></p>
+            <p><option value="perl">Perl</option></p>
+            <p><option value="swift">Swift</option></p>
+            <p> <option value="r">R</option></p>
+            <option value="rust">Rust</option>
+        </select>
+        <label for="Comments">Comment (Optional)</label>
+            <textarea class="u-full-width" id="Comments" placeholder="What's on you mind?" name="Comments"></textarea>
+
+        <input class="button-primary" type="submit"  value="submit">
+    </form>
+
+
+    </div>
